@@ -8,7 +8,7 @@
 ## install
 
 ```
-composer require yunchuang\appstore-connect-api
+composer require yunchuang/appstore-connect-api
 ```
 
 ## example
