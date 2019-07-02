@@ -10,7 +10,10 @@
         }
     ],
     "minimum-stability": "stable",
-    "require": {},
+    "require": {
+        "rmccue/requests": "^1.7",
+        "php-curl-class/php-curl-class": "^8.6"
+    },
     "autoload": {
         "psr-4": {
             "MingYuanYun\\AppStore\\": "src/"
