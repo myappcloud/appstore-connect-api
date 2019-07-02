@@ -50,4 +50,9 @@ class Profiles extends AbstractApi
         }
         return $this->postJson('/profiles', $data);
     }
+
+    public function listDevices($pId, array $params = [])
+    {
+        return $this->get('/profiles/' . $pId . '/devices', $params);
+    }
 }
