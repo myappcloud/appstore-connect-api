@@ -1,0 +1,19 @@
+{
+    "name": "yunchuang/appstore-connect-api",
+    "description": "sdk for appstore connect api",
+    "type": "library",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "zengbin",
+            "email": "zengb02@mingyuanyun.com"
+        }
+    ],
+    "minimum-stability": "dev",
+    "require": {},
+    "autoload": {
+        "psr-4": {
+            "MingYuanYun\\AppStore\\": "src/"
+        }
+    }
+}
