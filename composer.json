@@ -9,7 +9,7 @@
             "email": "zengb02@mingyuanyun.com"
         }
     ],
-    "minimum-stability": "1.0.0",
+    "minimum-stability": "stable",
     "require": {},
     "autoload": {
         "psr-4": {
