@@ -51,6 +51,9 @@ trait HttpClient
 
     protected function wrapContent($content)
     {
+        if (is_string($content)) {
+            $content = json_decode(implode('', explode(PHP_EOL, $content)));
+        }
         return json_decode(json_encode($content), true);
     }
 }

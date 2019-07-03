@@ -157,6 +157,9 @@ class Client
             case 'profiles':
                 $api = new Api\Profiles($this);
                 break;
+            case 'certificates':
+                $api = new Api\Certificates($this);
+                break;
             default:
                 throw new InvalidArgumentException('未定义的接口');
         }

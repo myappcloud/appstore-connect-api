@@ -11,7 +11,7 @@ class Profiles extends AbstractApi
         return $this->get('/profiles', $params);
     }
 
-    public function create($name, $bId, $profileType, array $devices, array $certificates)
+    public function create($name, $bId, $profileType, array $devices = [], array $certificates = [])
     {
         $data = [
             'data' => [
@@ -54,5 +54,15 @@ class Profiles extends AbstractApi
     public function listDevices($pId, array $params = [])
     {
         return $this->get('/profiles/' . $pId . '/devices', $params);
+    }
+
+    public function listCertificates($pId, array $params = [])
+    {
+        return $this->get('/profiles/' . $pId . '/relationships/certificates', $params);
+    }
+
+    public function drop($pId)
+    {
+        return $this->delete('/profiles/' . $pId);
     }
 }
